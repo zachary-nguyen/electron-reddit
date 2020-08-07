@@ -80,8 +80,7 @@ deploy:
   tag_name: $TRAVIS_TAG
   file: release/*
   on:
-    tags: true
-    all_branches: true
+    branch: master
 
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
