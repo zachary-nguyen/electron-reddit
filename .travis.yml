@@ -16,11 +16,11 @@ matrix:
         - ELECTRON_CACHE=$HOME/.cache/electron
         - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
 
-    - os: linux
-      dist: trusty
-      sudo: required
-      services: docker
-      language: generic
+#    - os: linux
+#      dist: trusty
+#      sudo: required
+#      services: docker
+#      language: generic
 
 notifications:
   email: false
