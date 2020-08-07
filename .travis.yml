@@ -65,8 +65,8 @@ deploy:
   api_key: $GH_TOKEN
   skip_cleanup: true
   file:
-    - "Reddit-Client-1.3.0-mac.zip"
-    - "Reddit-Client-1.3.0-mac.dmg"
+    - "release/Reddit-Client-1.3.0-mac.zip"
+    - "release/Reddit-Client-1.3.0-mac.dmg"
   on:
     branch: master
 
