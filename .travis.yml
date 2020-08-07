@@ -78,7 +78,6 @@ deploy:
   skip_cleanup: true
 #  target_commitish: $TRAVIS_COMMIT
 #  tag_name: $TRAVIS_TAG
-  file: release/*
   on:
     branch: master
 
