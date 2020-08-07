@@ -64,10 +64,9 @@ deploy:
   script: bash deploy.travis.sh
   api_key: $GH_TOKEN
   skip_cleanup: true
-
   file:
-    - "release/Reddit-Client-1.3.0-mac.zip"
-    - "release/Reddit-Client-1.3.0-mac.dmg"
+    - "Reddit-Client-1.3.0-mac.zip"
+    - "Reddit-Client-1.3.0-mac.dmg"
   on:
     branch: master
 
