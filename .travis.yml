@@ -76,8 +76,8 @@ deploy:
       fi
   api_key: $GH_TOKEN
   skip_cleanup: true
-#  target_commitish: $TRAVIS_COMMIT
-#  tag_name: $TRAVIS_TAG
+  target_commitish: $TRAVIS_COMMIT
+  tag_name: $TRAVIS_TAG
   file: release/*
   on:
     tags: true
