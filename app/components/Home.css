@@ -16,3 +16,17 @@
 #loader{
   height: 100%;
 }
+
+#old-reddit {
+  color: #FF5700;
+  border: 1px solid #FF5700;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+#reddit {
+  color: #fff;
+  border: 1px solid #FF5700;
+  background-color: #FF5700;
+  border-radius: 4px;
+}
