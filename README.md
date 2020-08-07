@@ -1,5 +1,8 @@
-
+<img src="./ressources/icon.ico"/>
 <br>
+## Reddit Client
+
+Desktop application to run reddit!
 
 ## Release
 
@@ -8,4 +11,3 @@ Latest:
   Windows: https://drive.google.com/file/d/1G6apxmkTHuyJq9eUHdefKulU3IFmPtP0/view?usp=sharing
   <br/>
   MacOs: N/A
-<hr />
