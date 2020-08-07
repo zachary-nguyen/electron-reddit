@@ -60,7 +60,7 @@ script:
 
 # only deploy to github on a merge to the prod branch
 deploy:
-  provider: script
+  provider: releases
   script: bash deploy.travis.sh
   api_key: $GH_TOKEN
   skip_cleanup: true
