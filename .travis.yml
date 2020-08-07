@@ -16,11 +16,11 @@ matrix:
         - ELECTRON_CACHE=$HOME/.cache/electron
         - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
 
-#    - os: linux
-#      dist: trusty
-#      sudo: required
-#      services: docker
-#      language: generic
+    - os: linux
+      dist: trusty
+      sudo: required
+      services: docker
+      language: generic
 
 notifications:
   email: false
@@ -51,6 +51,18 @@ before_cache:
 # only run this script on pull requests and merges into
 # the 'master' and 'prod' branches
 
+script:
+  - |
+    if [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      docker run --rm \
+        -v ${PWD}:/project \
+        -v ~/.cache/electron:/root/.cache/electron \
+        -v ~/.cache/electron-builder:/root/.cache/electron-builder \
+        electronuserland/builder:wine \
+        /bin/bash -c "yarn --link-duplicates --pure-lockfile && yarn test"
+    else
+      yarn test
+    fi
 
 deploy:
   provider: releases
