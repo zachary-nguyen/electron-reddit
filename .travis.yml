@@ -62,12 +62,12 @@ script:
 deploy:
   provider: releases
   script: bash deploy.travis.sh
-  api_key: $GH_TOKEN
+  api_key:
+    secure: $GH_TOKEN
   skip_cleanup: true
-  file:
-    - "v1.0.0"
-    - "release/Reddit-Client-1.3.0-mac.dmg"
+  file: release/*
   on:
+    tags: true
     branch: master
 
 before_cache:
