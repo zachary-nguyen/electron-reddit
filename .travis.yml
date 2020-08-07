@@ -61,6 +61,7 @@ script:
 deploy:
   provider: script
   script: bash deploy.travis.sh
+  api_key: $GH_TOKEN
   skip_cleanup: true
   on:
     branch: master
