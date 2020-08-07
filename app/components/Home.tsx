@@ -44,19 +44,7 @@ export default function Home(): JSX.Element {
 
   const classes = useStyles();
 
-  const [oldReddit, setOldReddit] = useState<null|boolean>(null);
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    if(oldReddit !== null){
-      setLoading(true);
-      if(oldReddit) {
-        window.location = "https://old.reddit.com";
-      } else {
-        window.location = "https://www.reddit.com";
-      }
-    }
-  },[oldReddit])
 
   return (
     <Grid id={"loader"} container justify={"center"} alignItems={"center"}>
@@ -64,8 +52,12 @@ export default function Home(): JSX.Element {
         <CircularProgress className={classes.loader} color={"secondary"}/>
         :
         <React.Fragment>
-          <Button onClick={() => setOldReddit(true)} className={classes.oldReddit}> Old Reddit </Button>
-          <Button onClick={() => setOldReddit(false)} className={classes.reddit}> Reddit </Button>
+          <Button onClick={() => {setLoading(true); window.location = "https://old.reddit.com";}} className={classes.oldReddit}>
+            Old Reddit
+          </Button>
+          <Button onClick={() =>{setLoading(true); window.location = "https://www.reddit.com";}} className={classes.reddit}>
+            Reddit
+          </Button>
         </React.Fragment>
       }
     </Grid>
