@@ -21,7 +21,6 @@ install:
 script:
   - |
     yarn install;
-    yarn release;
 
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
