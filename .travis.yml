@@ -76,7 +76,7 @@ deploy:
       fi
   api_key: $GH_TOKEN
   skip_cleanup: true
-  file: release/*
+  file: v1.0.0
   on:
     tags: false
     all_branches: true
