@@ -1,4 +1,4 @@
-<img src="./ressources/icon.ico"/>
+<img src="./resources/icon.ico"/>
 <br>
 ## Reddit Client
 
