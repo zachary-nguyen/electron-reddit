@@ -64,7 +64,7 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-`
+
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
 
