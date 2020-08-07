@@ -79,6 +79,7 @@ deploy:
 #  target_commitish: $TRAVIS_COMMIT
 #  tag_name: $TRAVIS_TAG
   on:
+    tags: true
     branch: master
 
 before_cache:
