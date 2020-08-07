@@ -1,5 +1,5 @@
 {
-  "name": "Reddit Client",
+  "name": "reddit-client",
   "productName": "Reddit Client",
   "version": "1.0.0",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
