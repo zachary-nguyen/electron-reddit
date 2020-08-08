@@ -70,7 +70,6 @@ deploy:
   api_key:
     secure: cz0JFUiw1BLqp3/n9c7j4ejiUuJ2yS1ufYWVFskov2RJpyZrbmc0rn3xnKmADNNmWTlsugaIM+ZxDlAcxSc8xIbakAdXxvZQpsfT3lEnBDD+Oy3IlA/AGJVdBV2XMgTxcXzn9GWrm6ocT4sQI1uYe8KAL5cuzTbGtw48MKZ67pUe/K1z1ynX4LTpdMVghYOp/AKuv7p/FW1veM0jzXUnlKF+Zz6+F3fg6HDBjGYeS+0RwdrYJ6WrfIkFLxsbPOx0ViYEMDn0CqztuULMq2/52IB7JMZwBFahdJpaELgNUoG6qEpDhGmMv5LgZ0k+NUT3RPt1hfd+rgzc/A/LJeXLctOVI5TLEEiq7M1DyduHwKHgfM3jswVm+TqDmXpEfgl8RpbSv/FbhXcC7KKpRNX8LVozmi5GLOA3q3T6oTOyCBUBegyxMlOAo/nWNpDuNNdo05WolpuRQDbgJEXRFYiLnE70iVNy5+qjDpve3Wh+FQOAS7rxFc3i8WICtqMedq9jkOxsssAd6h361Pxi4zsc7kl/nCsrSstd1OMboiOqH1hotWcYWfA1xsmj6/rr2poE/GnYcuXtO28wBFrEkRi4IP+oso36l/sf8hXkW2DaqLhMdGrScNioNQRYdUaOpBLId1dXKmLocJT/p7G53/OLmZyvLzJG76Se0remUvhvP3U=
   file: release/*
-  draft: true
   file_glob: true
   skip_cleanup: true
   on:
