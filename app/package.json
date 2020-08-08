@@ -1,7 +1,7 @@
 {
   "name": "reddit-client",
   "productName": "reddit-client",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "Reddit desktop client",
   "main": "./main.prod.js",
   "scripts": {
