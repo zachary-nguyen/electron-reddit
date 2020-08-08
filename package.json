@@ -95,7 +95,6 @@
     },
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
       "repo": "electron-reddit",
       "private": false
     }
